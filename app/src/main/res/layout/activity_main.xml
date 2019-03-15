@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/contacts_app"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivMood"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo1"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/call"
+        android:focusable="true"
+        android:contentDescription="@string/todo1" />
+
+    <ImageView
+        android:id="@+id/ivWeb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/web"
+        android:focusable="true"
+        android:contentDescription="@string/todo1" />
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_place_black_24dp"
+        android:focusable="true"
+        android:contentDescription="@string/todo1" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/create_new_contact"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
